@@ -1,0 +1,19 @@
+<div>
+	<h3>ng-repeat</h3>
+	<div>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Start</th>
+					<th>Language</th>
+				</tr>
+			</thead>
+			<tr ng-repeat="repo in repos">
+				<td>{{repo.name}}</td>
+				<td>{{repo.stargazers_count | number}}</td>
+				<td>{{repo.language}}</td>
+			</tr>
+		</table>
+	</div>
+</div>
