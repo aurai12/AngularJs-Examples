@@ -17,7 +17,7 @@ myApp.controller('MyController', [ '$scope', '$http', function ($scope, $http) {
 			$scope.error = "Failed to find user";
 		}
 		
-		var promise = $http.get("https://ap.github.com/users/aurai12");
+		var promise = $http.get("https://api.github.com/users/aurai12");
 		
 		promise.then(onRequestSucess, onRequestFailure);
 		
