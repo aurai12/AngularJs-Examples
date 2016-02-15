@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html ng-app="">
 <head>
-<title>Hello</title>
-<script type="text/javascript" src="angular.min.js"></script>
+<title>Angular Js Example</title>
+<script type="text/javascript" src="js/angular.min-1.5.0.js"></script>
+
 </head>
 <body>
-	<div>
-		Name : <br /> <input type="text" ng-model="name" /> 
-		<br/>
-		Hello {{ name }}
+
+	<!-- TODO Add comment -->
+	<div style="margin-left: 20px;">
+		<div>
+			 Name : <br /> <input type="text" ng-model="name" /> 
+		</div>
+		<br>
+		<div style="margin-left: 25px;">
+			Hello <b>{{ name }}</b>
+		</div>
 	</div>
-	<div class="container" data-ng-init="names=['Dave','Dave2','Dave3','Dave4']">
+	
+	<br/>
+	<!-- TODO Add comment -->
+	<div style="margin-left: 20px;" class="container" data-ng-init="names=['Dave','Dave2','Dave3','Dave4']">
 		<ul>
 			<li data-ng-repeat="foo in names"> {{ foo }} </li>
 		</ul>
 	</div>
+
+	
 </body>
 </html>

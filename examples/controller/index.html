@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Angular Js Example</title>
+<script type="text/javascript" src="js/angular.min-1.5.0.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</head>
+<body ng-controller="MyController">
+
+	<!-- binding model with controller -->
+	<div>
+		<h2>{{ message }}</h2>
+	</div>
+
+	<br/>
+
+	<div>
+		<h4>Git Api Response</h4>
+		<br>
+		<div>
+			<b style="color: red;">{{error}}</b>
+			<br>
+		</div>
+		<div>
+			User Name : {{name}}
+		</div>
+		<div>
+			Image : 
+			<div>
+				<img alt="" src="{{avatarUrl}}">
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
