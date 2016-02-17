@@ -1,0 +1,26 @@
+{
+  "name": "angularjs-examples",
+  "version": "1.0.0",
+  "description": "Angular-Js Version - 1.5.0",
+  "main": "server.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurai12/AngularJs-Examples.git"
+  },
+  "author": "aurai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aurai12/AngularJs-Examples/issues"
+  },
+  "homepage": "https://github.com/aurai12/AngularJs-Examples#readme",
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  }
+}
