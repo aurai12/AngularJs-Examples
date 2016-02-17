@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<title>Angular Js Example</title>
+<script type="text/javascript" src="js/angular.min-1.5.0.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/appFactory.js"></script>
+
+</head>
+<body ng-controller="MyController">
+
+	<!-- binding model with controller -->
+	<div>
+		<h2>{{ message }}</h2>
+	</div>
+	<div align="center">
+		<div>
+			<h3>ng-model</h3>
+			<div>
+				<b style="color: red;">{{error}}</b>
+			</div>
+			{{countDown}}
+			<div>
+				<form ng-submit="search(username)">
+					<input type="text" required placeholder="Enter User name"
+						ng-model="username"> <input type="submit" value="Search">
+				</form>
+			</div>
+			<div>User Name : {{user.name}}</div>
+			<div>
+				Image :
+				<div>
+					<img alt="" ng-src="{{user.avatar_url}}">
+				</div>
+			</div>
+		</div>
+		<div ng-include="'userDetail.html'" ng-show="user"></div>
+	</div>
+</body>
+</html>
