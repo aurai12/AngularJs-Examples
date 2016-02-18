@@ -1,7 +1,7 @@
 var myApp = angular.module('myApp', []);
 
-myApp.controller('MyController', [ '$scope', '$http', '$interval', '$log', '$location', '$anchorScroll', 'appFactory', 
-                                   function($scope, $http, $interval, $log, $location, $anchorScroll, appFactory) {
+myApp.controller('MyController', [ '$scope', '$http', '$interval', '$log', '$location', '$anchorScroll', 'appFactory', 'appService',
+                                   function($scope, $http, $interval, $log, $location, $anchorScroll, appFactory, appService) {
 	$scope.message = "Angular By Example";
 	$scope.user = {};
 	$scope.username = "angular";
@@ -20,7 +20,7 @@ myApp.controller('MyController', [ '$scope', '$http', '$interval', '$log', '$loc
 
 	function searchRepos() {
 		console.log('Searching Repos');
-		var promise = appFactory.searchRepo($scope.user);
+		var promise = appService.searchRepo($scope.user);
 		promise.then(onRepoSucess, onRepoSucess);
 		$location.hash('userDetail');
 		$anchorScroll();
